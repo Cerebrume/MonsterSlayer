@@ -38,7 +38,7 @@ new Vue({
             const damage = this.calculateDamage(10, 20);
             this.monsterHealth -= damage;
             this.isSpecialAttackAvailable = false;
-            this.logPlayerAction('attack', damage);
+            this.logPlayerAction('specialAttack', damage);
             if (this.checkWin()) {
                 return;
             }
